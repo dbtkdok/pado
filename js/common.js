@@ -21,8 +21,13 @@ $(function () {
 });
 
 function fnMovePage(id, nextID) {
-    $(id).addClass("none");
-    $(nextID).removeClass("none", "");
+    if(nextID == "final") {
+        console.log(cntList);
+    } else {
+        $(id).addClass("none");
+        $(nextID).removeClass("none", "");
+    }
+    
 }
 
 function fnMoveNextContent(id, clsNM, num) {
@@ -42,7 +47,6 @@ function fnMoveNextContent(id, clsNM, num) {
         cntMap.set(id, num);
         cntList.push(cntMap);
     }
-    console.log(cntList);
 }
 
 

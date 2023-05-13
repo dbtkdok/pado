@@ -15,48 +15,225 @@ body {
 }
 
 #section_0 {
-  background-image: url("../img/main_images.jpg");
+  background-image: url("../img/step_01.jpg");
   background-size: cover;
   background-repeat: round;
 }
 
 #section_1 {
-  background-image: url("../img/step1_1.jpg");
+  background-image: url("../img/step_02.jpg");
   background-size: cover;
   background-repeat: round;
 }
 
 #section_2 {
-  background-image: url("../img/step1_1.jpg");
+  background-image: url("../img/step_03.png");
   background-size: cover;
   background-repeat: round;
 }
 
 #section_3 {
-  background-image: url("../img/step1_1.jpg");
+  background-image: url("../img/step_04.png");
   background-size: cover;
   background-repeat: round;
 }
 
 #section_4 {
-  background-image: url("../img/step1_1.jpg");
+  background-image: url("../img/step_05.png");
   background-size: cover;
   background-repeat: round;
 }
 
-#step_1, #step_4, #step_7 {
+#section_5 {
+  background-image: url("../img/step_06.png");
+  background-size: cover;
+  background-repeat: round;
+}
+
+#section_6 {
+  background-image: url("../img/step_07.png");
+  background-size: cover;
+  background-repeat: round;
+}
+
+#section_7 {
+  background-image: url("../img/step_08.png");
+  background-size: cover;
+  background-repeat: round;
+}
+
+#section_8 {
+  background-image: url("../img/step_09.png");
+  background-size: cover;
+  background-repeat: round;
+}
+
+#section_9 {
+  background-image: url("../img/step_10.png");
+  background-size: cover;
+  background-repeat: round;
+}
+
+#section_10 {
+  background-image: url("../img/step_11.png");
+  background-size: cover;
+  background-repeat: round;
+}
+
+#section_11 {
+  background-image: url("../img/step_12.png");
+  background-size: cover;
+  background-repeat: round;
+}
+
+#section_12 {
+  background-image: url("../img/step_13.png");
+  background-size: cover;
+  background-repeat: round;
+}
+
+#step_1 {
   top: 42%;
-  left: 14%;
 }
 
-#step_2, #step_5, #step_8 {
+#step_2{
   top: 62%;
-  left: 14%;
 }
 
-#step_3, #step_6, #step_9 {
+#step_3 {
   top: 80%;
-  left: 14%;
+}
+
+#step_4 {
+  top: 42%;
+}
+
+#step_5{
+  top: 63%;
+}
+
+#step_6 {
+  top: 82%;
+}
+
+#step_7 {
+  top: 44%;
+}
+
+#step_8{
+  top: 62%;
+}
+
+#step_9 {
+  top: 82%;
+}
+
+#step_10 {
+  top: 42%;
+}
+
+#step_11{
+  top: 62%;
+}
+
+#step_12 {
+  top: 81%;
+}
+
+#step_13 {
+  top: 44%;
+}
+
+#step_14{
+  top: 63%;
+}
+
+#step_15 {
+  top: 82%;
+}
+
+#step_16 {
+  top: 42%;
+}
+
+#step_17{
+  top: 63%;
+}
+
+#step_18 {
+  top: 80%;
+}
+
+#step_19 {
+  top: 43.5%;
+}
+
+#step_20{
+  top: 62%;
+}
+
+#step_21 {
+  top: 80%;
+}
+
+#step_22 {
+  top: 44%;
+}
+
+#step_23{
+  top: 62%;
+}
+
+#step_24 {
+  top: 82%;
+}
+
+#step_25 {
+  top: 42%;
+}
+
+#step_26{
+  top: 62%;
+}
+
+#step_27 {
+  top: 80%;
+}
+
+#step_28 {
+  top: 43%;
+}
+
+#step_29{
+  top: 62%;
+}
+
+#step_30 {
+  top: 82%;
+}
+
+#step_31 {
+  top: 42%;
+}
+
+#step_32{
+  top: 62%;
+}
+
+#step_33 {
+  top: 80%;
+}
+
+#step_34 {
+  top: 43%;
+}
+
+#step_35{
+  top: 62%;
+}
+
+#step_36 {
+  top: 80%;
 }
 
 /*form styles*/
@@ -112,13 +289,15 @@ body {
   counter-reset: step;
   width: 65%;
   position: absolute;
+  left: 14%;
 }
 .progressbar li {
   list-style-type: none;
-  color: white;
+  color: #000;
   text-transform: uppercase;
   font-size: 15px;
   width: 25%;
+  border-radius: 8px;
   float: left;
   position: relative;
 }
@@ -131,7 +310,7 @@ body {
   font-size: 10px;
   color: #333;
   background: white;
-  border-radius: 3px;
+  border-radius: 10px;
   margin: 0 auto 5px auto;
 }
 /*progressbar connectors*/
