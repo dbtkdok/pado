@@ -3,6 +3,9 @@
  * Design nas.
  */
 var cnt = 0;
+var cntList = new Array();
+
+
 
 $(document).ready(function () {
     //HTML 과 CSS 의 모든 로딩이 끝나면 J-Query 를 실행.
@@ -17,18 +20,29 @@ $(function () {
 
 });
 
-function fnMoveNextContent(id, nextID,cntYN) {
-    if(cntYN == "Y") {
-        cnt = cnt + 1;
+function fnMovePage(id, nextID) {
+    $(id).addClass("none");
+    $(nextID).removeClass("none", "");
+}
+
+function fnMoveNextContent(id, clsNM, num) {
+    var cntMap = new Map;
+    var cntBool = false;
+    $("#" + id + " li").removeClass('active', '');
+    $("#" + id + " ." + clsNM).addClass('active');
+    cntList.map(function(element){
+        if(element.get(id) != undefined && element.get(id) != null) {
+            cntBool = true;
+            element.delete(id);
+            element.set(id, num);
+        }
+        return cntBool;
+    });
+    if(!cntBool) {
+        cntMap.set(id, num);
+        cntList.push(cntMap);
     }
-    if(nextID == "FINAL") {
-        $(id).addClass("none");
-        $("#section_final").removeClass("none", "");
-    } else {
-        $(id).addClass("none");
-        $(nextID).removeClass("none", "");
-    }    
-    console.log(cnt);
+    console.log(cntList);
 }
 
 

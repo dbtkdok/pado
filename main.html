@@ -1,57 +1,100 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <script src="./js/jquery.min.js"></script>
-  <link rel="stylesheet" href="./css/bootstrap.min.css">
-  <script src="./js/bootstrap.min.js"></script>
+  <!-- jQuery -->
+  <script src="http://thecodeplayer.com/uploads/js/jquery-1.9.1.min.js" type="text/javascript"></script>
+  <!-- jQuery easing plugin -->
+  <script src="http://thecodeplayer.com/uploads/js/jquery.easing.min.js" type="text/javascript"></script>
   <link rel="stylesheet" type="text/css" href="./css/style.css">
   <script src="./js/common.js"></script>
 </head>
-<body>
-  <div id="section_1" class="panels">
-    <div class="panels__container">
-      <a href="#" class="panel" onclick="fnMoveNextContent('#section_1', '#section_2','Y')">
-        <div class="panel__content" >
-          <h3 class="panel__title">EXPLORE</h3>
-        </div>
-      </a>
-      <a href="#" class="panel" onclick="fnMoveNextContent('#section_1', '#section_2','N')">
-        <div class="panel__content">
-          <h3 class="panel__title">DISCOVER</h3>
-        </div>
-      </a>
-    </div>
+<body> 
+  <a href="#" id="section_0" class="panels" onclick="fnMovePage('#section_0', '#section_1')">
+    
+  </a>
+  <div id="section_1" class="panels none">
+    <div class="msform">
+      <!-- progressbar -->
+      <ul id="step_1" class="progressbar">
+          <a href="#" onclick="fnMoveNextContent('step_1', 'set_1', 1)"><li class="set_1">거의 그렇지 않다</li></a>
+          <a href="#" onclick="fnMoveNextContent('step_1', 'set_2', 2)"><li class="set_2">그렇지 않은 편이다</li></a>
+          <a href="#" onclick="fnMoveNextContent('step_1', 'set_3', 3)"><li class="set_3">그렇다</li></a>
+          <a href="#" onclick="fnMoveNextContent('step_1', 'set_4', 4)"><li class="set_4">매우 그렇다</li></a>
+      </ul>
+      <ul id="step_2" class="progressbar">
+        <a href="#" onclick="fnMoveNextContent('step_2', 'set_1', 1)"><li class="set_1">거의 그렇지 않다</li></a>
+        <a href="#" onclick="fnMoveNextContent('step_2', 'set_2', 2)"><li class="set_2">그렇지 않은 편이다</li></a>
+        <a href="#" onclick="fnMoveNextContent('step_2', 'set_3', 3)"><li class="set_3">그렇다</li></a>
+        <a href="#" onclick="fnMoveNextContent('step_2', 'set_4', 4)"><li class="set_4">매우 그렇다</li></a>
+    </ul>
+    <ul id="step_3" class="progressbar">
+      <a href="#" onclick="fnMoveNextContent('step_3', 'set_1', 1)"><li class="set_1">거의 그렇지 않다</li></a>
+      <a href="#" onclick="fnMoveNextContent('step_3', 'set_2', 2)"><li class="set_2">그렇지 않은 편이다</li></a>
+      <a href="#" onclick="fnMoveNextContent('step_3', 'set_3', 3)"><li class="set_3">그렇다</li></a>
+      <a href="#" onclick="fnMoveNextContent('step_3', 'set_4', 4)"><li class="set_4">매우 그렇다</li></a>
+    </ul>
+    <fieldset>
+      <input type="button" onclick="fnMovePage('#section_1', '#section_0')" name="next" class="next action-button" value="<" style="float: left;"/>
+      <input type="button" onclick="fnMovePage('#section_1', '#section_2')" name="next" class="next action-button" value=">" style="float: right;"/>
+    </fieldset>
   </div>
+</div>
 
-  <div id="section_2" class="panels">
-    <div class="panels__container">
-      <a href="#" class="panel" onclick="fnMoveNextContent('#section_2', '#section_3','Y')">
-        <div class="panel__content" >
-          <h3 class="panel__title">EXPLORE2</h3>
-        </div>
-      </a>
-      <a href="#" class="panel" onclick="fnMoveNextContent('#section_2', '#section_3','N')">
-        <div class="panel__content">
-          <h3 class="panel__title">DISCOVER2</h3>
-        </div>
-      </a>
-    </div>
+<div id="section_2" class="panels none">
+  <div class="msform">
+      <!-- progressbar -->
+      <ul id="step_4" class="progressbar">
+          <a href="#" onclick="fnMoveNextContent('step_4', 'set_1', 1)"><li class="set_1">거의 그렇지 않다</li></a>
+          <a href="#" onclick="fnMoveNextContent('step_4', 'set_2', 2)"><li class="set_2">그렇지 않은 편이다</li></a>
+          <a href="#" onclick="fnMoveNextContent('step_4', 'set_3', 3)"><li class="set_3">그렇다</li></a>
+          <a href="#" onclick="fnMoveNextContent('step_4', 'set_4', 4)"><li class="set_4">매우 그렇다</li></a>
+      </ul>
+      <ul id="step_5" class="progressbar">
+        <a href="#" onclick="fnMoveNextContent('step_5', 'set_1', 1)"><li class="set_1">거의 그렇지 않다</li></a>
+        <a href="#" onclick="fnMoveNextContent('step_5', 'set_2', 2)"><li class="set_2">그렇지 않은 편이다</li></a>
+        <a href="#" onclick="fnMoveNextContent('step_5', 'set_3', 3)"><li class="set_3">그렇다</li></a>
+        <a href="#" onclick="fnMoveNextContent('step_5', 'set_4', 4)"><li class="set_4">매우 그렇다</li></a>
+    </ul>
+    <ul id="step_6" class="progressbar">
+      <a href="#" onclick="fnMoveNextContent('step_6', 'set_1', 1)"><li class="set_1">거의 그렇지 않다</li></a>
+      <a href="#" onclick="fnMoveNextContent('step_6', 'set_2', 2)"><li class="set_2">그렇지 않은 편이다</li></a>
+      <a href="#" onclick="fnMoveNextContent('step_6', 'set_3', 3)"><li class="set_3">그렇다</li></a>
+      <a href="#" onclick="fnMoveNextContent('step_6', 'set_4', 4)"><li class="set_4">매우 그렇다</li></a>
+    </ul>
+    <fieldset>
+      <input type="button" onclick="fnMovePage('#section_2', '#section_1')" name="next" class="next action-button" value="<" style="float: left;"/>
+      <input type="button" onclick="fnMovePage('#section_2', '#section_3')" name="next" class="next action-button" value=">" style="float: right;"/>
+    </fieldset>
   </div>
+</div>
 
-  <div id="section_3" class="panels none">
-    <div class="panels__container">
-      <a href="#" class="panel" onclick="fnMoveNextContent('#section_3', '#section_4','Y')">
-        <div class="panel__content" >
-          <h3 class="panel__title">EXPLORE2</h3>
-        </div>
-      </a>
-      <a href="#" class="panel">
-        <div class="panel__content"  onclick="fnMoveNextContent('#section_3', '#section_4','N')">
-          <h3 class="panel__title">DISCOVER2</h3>
-        </div>
-      </a>
-    </div>
+<div id="section_3" class="panels none">
+  <div class="msform">
+      <!-- progressbar -->
+      <ul id="step_7" class="progressbar">
+          <a href="#" onclick="fnMoveNextContent('step_7', 'set_1', 1)"><li class="set_1">거의 그렇지 않다</li></a>
+          <a href="#" onclick="fnMoveNextContent('step_7', 'set_2', 2)"><li class="set_2">그렇지 않은 편이다</li></a>
+          <a href="#" onclick="fnMoveNextContent('step_7', 'set_3', 3)"><li class="set_3">그렇다</li></a>
+          <a href="#" onclick="fnMoveNextContent('step_7', 'set_4', 4)"><li class="set_4">매우 그렇다</li></a>
+      </ul>
+      <ul id="step_8" class="progressbar">
+        <a href="#" onclick="fnMoveNextContent('step_8', 'set_1', 1)"><li class="set_1">거의 그렇지 않다</li></a>
+        <a href="#" onclick="fnMoveNextContent('step_8', 'set_2', 2)"><li class="set_2">그렇지 않은 편이다</li></a>
+        <a href="#" onclick="fnMoveNextContent('step_8', 'set_3', 3)"><li class="set_3">그렇다</li></a>
+        <a href="#" onclick="fnMoveNextContent('step_8', 'set_4', 4)"><li class="set_4">매우 그렇다</li></a>
+    </ul>
+    <ul id="step_9" class="progressbar">
+      <a href="#" onclick="fnMoveNextContent('step_9', 'set_1', 1)"><li class="set_1">거의 그렇지 않다</li></a>
+      <a href="#" onclick="fnMoveNextContent('step_9', 'set_2', 2)"><li class="set_2">그렇지 않은 편이다</li></a>
+      <a href="#" onclick="fnMoveNextContent('step_9', 'set_3', 3)"><li class="set_3">그렇다</li></a>
+      <a href="#" onclick="fnMoveNextContent('step_9', 'set_4', 4)"><li class="set_4">매우 그렇다</li></a>
+    </ul>
+    <fieldset>
+      <input type="button" onclick="fnMovePage('#section_3', '#section_2')" name="next" class="next action-button" value="<" style="float: left;"/>
+      <input type="button" onclick="fnMovePage('#section_3', '#section_4')" name="next" class="next action-button" value=">" style="float: right;"/>
+    </fieldset>
   </div>
+</div>
 
   <div id="section_4" class="panels none">
     <div class="panels__container">
