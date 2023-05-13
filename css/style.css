@@ -241,6 +241,14 @@ body {
   top: 80%;
 }
 
+#prev {
+  left : 10px
+}
+
+#next {
+  right : 10px
+}
+
 /*form styles*/
 .msform {
   width: 100%;
@@ -274,7 +282,8 @@ body {
 }
 /*buttons*/
 .msform .action-button {
-  width: 75px;
+  width: 50px;
+  height: 120px;
   background: #88b3da;
   font-weight: bold;
   color: white;
@@ -283,6 +292,8 @@ body {
   cursor: pointer;
   padding: 10px 5px;
   margin: 10px 5px;
+  position: absolute;
+  top: 50%;
 }
 .msform .action-button:hover, .msform .action-button:focus {
   box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
