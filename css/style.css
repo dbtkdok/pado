@@ -92,6 +92,11 @@ body {
   background-repeat: round;
 }
 
+#section_final {
+  background-size: cover;
+  background-repeat: round;
+}
+
 #step_1 {
   top: 42%;
 }

@@ -23,7 +23,7 @@ $(function () {
 
 function fnMovePage(id, nextID) {
     if(nextID == "final") {
-        console.log(cntList);
+        //console.log(cntList);
         if(cntList.length == 36) {
             var final_cnt_1 = 0;
             var final_cnt_2 = 0;
@@ -34,7 +34,6 @@ function fnMovePage(id, nextID) {
                         //console.log(element.get("step_" + element1));
                         final_cnt_1 += element.get("step_" + element1);
                     }
-                    
                 })
 
                 final_2.map(function(element2){
@@ -42,8 +41,6 @@ function fnMovePage(id, nextID) {
                         //console.log(element.get("step_" + element2));
                         final_cnt_2 += element.get("step_" + element2);
                     }
-                    
-                
                 })
 
                 final_3.map(function(element3){
@@ -53,12 +50,19 @@ function fnMovePage(id, nextID) {
                     }
                 })
             })
-            console.log("final_cnt_1", final_cnt_1);
-            console.log("final_cnt_2", final_cnt_2);
-            console.log("final_cnt_3", final_cnt_3);
+            var finalin = Math.max(final_cnt_1, final_cnt_2, final_cnt_3);
+            $(id).addClass("none");
+            $("#section_final").removeClass("none", "");
+            if(final_cnt_1 == finalin) {
+                $("#section_final").css('background-image', 'url(../img/final_1.png)');
+            } else if(final_cnt_2 == finalin) {
+                $("#section_final").css('background-image', 'url(../img/final_2.png)');
+            } else if(final_cnt_3 == finalin) {
+                $("#section_final").css('background-image', 'url(../img/final_3.png)');
+            }
             //alert("final testsetset");
         } else {
-            console.log(cntList.length);
+            //console.log(cntList.length);
             //alert("final testsetset");
         }
     } else {
