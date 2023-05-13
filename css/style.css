@@ -320,13 +320,13 @@ body {
 .progressbar li:before {
   content: counter(step);
   counter-increment: step;
-  width: 20px;
-  line-height: 20px;
+  width: 50px;
+  line-height: 35px;
   display: block;
-  font-size: 10px;
+  font-size: 25px;
   color: #333;
-  background: white;
-  border-radius: 10px;
+  background: #c9deef;
+  border-radius: 50px;
   margin: 0 auto 5px auto;
 }
 /*progressbar connectors*/
@@ -347,6 +347,6 @@ body {
 /*marking active/completed steps green*/
 /*The number of the step and the connector before it = green*/
 .progressbar li.active:before,  .progressbar li.active:after{
-  background: #27AE60;
+  background: #0e70c5;
   color: white;
 }
