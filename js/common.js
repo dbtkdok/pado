@@ -54,11 +54,11 @@ function fnMovePage(id, nextID) {
             $(id).addClass("none");
             $("#section_final").removeClass("none", "");
             if(final_cnt_1 == finalin) {
-                $("#section_final").css('background-image', 'url(../img/final_1.png)');
+                $("#section_final").css('background-image', 'url(./img/final_1.png)');
             } else if(final_cnt_2 == finalin) {
-                $("#section_final").css('background-image', 'url(../img/final_2.png)');
+                $("#section_final").css('background-image', 'url(./img/final_2.png)');
             } else if(final_cnt_3 == finalin) {
-                $("#section_final").css('background-image', 'url(../img/final_3.png)');
+                $("#section_final").css('background-image', 'url(./img/final_3.png)');
             }
             //alert("final testsetset");
         } else {
