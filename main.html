@@ -7,9 +7,17 @@
   <script src="./js/common.js"></script>
 </head>
 <body> 
-  <a href="#" id="section_0" class="panels" onclick="fnMovePage('#section_0', '#section_1')">
+  <a href="#" id="section_0_1" class="panels" onclick="fnMovePage('#section_0_1', '#section_0_2')">
     
   </a>
+  <div href="#" id="section_0_2" class="panels none">
+    <div class="msform">
+      <fieldset>
+        <input type="button" onclick="fnMovePage('#section_0_2', '#section_0_1')" name="next" id="prev" class="next action-button" value="<" style="float: left;"/>
+        <input type="button" onclick="fnMovePage('#section_0_2', '#section_1')" name="next" id="next" class="next action-button" value=">" style="float: right;"/>
+      </fieldset>
+    </div>
+  </div>
   <div id="section_1" class="panels none">
     <div class="msform">
       <!-- progressbar -->
@@ -32,7 +40,7 @@
       <a href="#" onclick="fnMoveNextContent('step_3', 'set_4', 4)"><li class="set_4">매우 그렇다</li></a>
     </ul>
     <fieldset>
-      <input type="button" onclick="fnMovePage('#section_1', '#section_0')" name="next" id="prev" class="next action-button" value="<" style="float: left;"/>
+      <input type="button" onclick="fnMovePage('#section_1', '#section_0_2')" name="next" id="prev" class="next action-button" value="<" style="float: left;"/>
       <input type="button" onclick="fnMovePage('#section_1', '#section_2')" name="next" id="next" class="next action-button" value=">" style="float: right;"/>
     </fieldset>
   </div>

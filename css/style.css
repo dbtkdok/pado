@@ -14,8 +14,14 @@ body {
   display: none;
 }
 
-#section_0 {
+#section_0_1 {
   background-image: url("../img/step_01.jpg");
+  background-size: cover;
+  background-repeat: round;
+}
+
+#section_0_2 {
+  background-image: url("../img/step_17.png");
   background-size: cover;
   background-repeat: round;
 }
