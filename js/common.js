@@ -28,6 +28,7 @@ function fnMovePage(id, nextID) {
             var final_cnt_1 = 0;
             var final_cnt_2 = 0;
             var final_cnt_3 = 0;
+            var sum_final_score = 0;
             cntList.map(function(element){
                 final_1.map(function(element1){
                     if(element.get("step_" + element1) != undefined && element.get("step_" + element1) != null) {
@@ -53,13 +54,22 @@ function fnMovePage(id, nextID) {
             var finalin = Math.max(final_cnt_1, final_cnt_2, final_cnt_3);
             $(id).addClass("none");
             $("#section_final").removeClass("none", "");
+            /*
             if(final_cnt_1 == finalin) {
                 $("#section_final").css('background-image', 'url(./img/final_1.png)');
             } else if(final_cnt_2 == finalin) {
                 $("#section_final").css('background-image', 'url(./img/final_2.png)');
             } else if(final_cnt_3 == finalin) {
                 $("#section_final").css('background-image', 'url(./img/final_3.png)');
-            }
+            } */
+            sum_final_score = final_cnt_1 + final_cnt_2 + final_cnt_3;
+            $("#fin_1").text(final_cnt_1);
+            $("#fin_2").text(final_cnt_2);
+            $("#fin_3").text(final_cnt_3);
+            $("#fin_top").text(sum_final_score);
+            console.log("final_cnt_1 :: ", final_cnt_1);
+            console.log("final_cnt_2 :: ", final_cnt_2);
+            console.log("final_cnt_3 :: ", final_cnt_3);
             //alert("final testsetset");
         } else {
             //console.log(cntList.length);
