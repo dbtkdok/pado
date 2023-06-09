@@ -67,9 +67,9 @@ function fnMovePage(id, nextID) {
             $("#fin_2").text(final_cnt_2);
             $("#fin_3").text(final_cnt_3);
             $("#fin_top").text(sum_final_score);
-            console.log("final_cnt_1 :: ", final_cnt_1);
-            console.log("final_cnt_2 :: ", final_cnt_2);
-            console.log("final_cnt_3 :: ", final_cnt_3);
+            //console.log("final_cnt_1 :: ", final_cnt_1);
+            //console.log("final_cnt_2 :: ", final_cnt_2);
+            //console.log("final_cnt_3 :: ", final_cnt_3);
             //alert("final testsetset");
         } else {
             //console.log(cntList.length);
