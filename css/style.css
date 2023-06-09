@@ -129,7 +129,7 @@ body {
 
 #step_final_top span {
   font-size: 10em;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
   color: #fff;
 }
 
@@ -142,17 +142,17 @@ body {
 }
 
 #step_final_down span {
-  font-size: 5em;
-  font-family: 'Roboto', sans-serif;
+  font-size: 4em;
+  font-family: 'Noto Sans KR', sans-serif;
   color: #fff;
 }
 
 #fin_1 {
-  margin-left: 18%;
+  margin-left: 19%;
 }
 
 #fin_3 {
-  margin-right: 19%;
+  margin-right: 20%;
 }
 
 #step_1 {
