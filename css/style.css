@@ -413,3 +413,24 @@ body {
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
+
+#section_01_vd {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  background: url(polina.jpg) no-repeat;
+  background-size: cover;
+}
+
+#vd_text {
+  border-radius: 15px;
+  background-color: #0000008f;
+  color: #eee;
+  font-weight: bold;
+  font-size: 15px;
+}
