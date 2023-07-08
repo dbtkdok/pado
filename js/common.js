@@ -17,7 +17,18 @@ $(document).ready(function () {
 
 
 $(function () {
-
+    $('#vd_text').on("blur", function () {
+        var time = 1;
+        var timer = setInterval(function() {
+            time = time + 1;
+            if(time == 9) {
+                $("#vd_text").val("");
+                time = 1;
+                clearInterval(timer);
+            }
+        }, 1000);
+        
+    });
 
 });
 
