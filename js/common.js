@@ -50,6 +50,7 @@ $(function () {
                         time = 1;
                         clearInterval(timer);
                         $('#exampleModal').modal('hide');
+                        $("#pado_modal").show();
                     });
                 }
             }, 1000);
