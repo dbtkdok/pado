@@ -17,6 +17,16 @@ $(document).ready(function () {
 
 
 $(function () {
+
+    var input = document.getElementById("vd_text");
+
+    input.addEventListener("keyup", function (event) {
+      if (event.keyCode === 13) {
+        event.preventDefault();
+        $('#exampleModal').modal('show');
+      }
+    });
+
     $('#exampleModal').on('shown.bs.modal', function () {
         $("#vd_modal").removeClass("vd_box_show");
         var text = $("#vd_text").val();
