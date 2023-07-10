@@ -17,6 +17,38 @@ $(document).ready(function () {
 
 
 $(function () {
+    $('#exampleModal').on('shown.bs.modal', function () {
+        $("#vd_modal").removeClass("vd_box_show");
+        var text = $("#vd_text").val();
+        
+        if(text == "") {
+            $('#exampleModal').modal('hide');
+            alert("먼저 파도에 적을 내용을 입력해주세요.");
+        } else {
+            $("#vd_text").val("");
+            $("#vd_modal").addClass("vd_box_show");
+            $("#pado_modal").text(text);
+            $("#pado_modal").addClass("vd_box_back");
+            
+            var time = 1;
+            var timer = setInterval(function() {
+                time = time + 1;
+                if(time == 9) {
+                    //$("#pado_modal").text("");
+                    $("#pado_modal").fadeOut(2000, "linear", function(){
+                        $("#pado_modal").text("");
+                        time = 1;
+                        clearInterval(timer);
+                        $('#exampleModal').modal('hide');
+                    });
+                }
+            }, 1000);
+            
+        }
+        
+    })
+
+    /*
     $('#vd_text').on("blur", function () {
         var time = 1;
         var timer = setInterval(function() {
@@ -29,6 +61,7 @@ $(function () {
         }, 1000);
         
     });
+    */
 
 });
 

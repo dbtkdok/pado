@@ -428,9 +428,24 @@ body {
 }
  
 #vd_text {
-  border-radius: 15px;
+  border-radius: 15px 0px 0px 15px;
   background-color: #0000008f;
   color: #eee;
   font-weight: bold;
   font-size: 15px;
+}
+
+#vd_btn {
+  border-radius: 0px 8px 8px 0px;
+  padding: 25px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.vd_box_show {
+  box-shadow: 0 5px 15px rgba(0,0,0,.5);
+}
+
+.vd_box_back {
+  background: #0e70c5;
 }
