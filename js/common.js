@@ -43,7 +43,7 @@ $(function () {
             var time = 1;
             var timer = setInterval(function() {
                 time = time + 1;
-                if(time == 9) {
+                if(time == 5) {
                     //$("#pado_modal").text("");
                     $("#pado_modal").fadeOut(2000, "linear", function(){
                         $("#pado_modal").text("");
